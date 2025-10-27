@@ -70,7 +70,7 @@ class PDFExtractor:
                 continue
         return sorted(set(pages))
 
-    def extract_content(self, pdf_path: str, pages: Optional[str]) -> List[str]:
+    def extract_content(self, pdf_path: str, pages: Optional[str]) -> str:
         """提取PDF内容的主方法"""
         if not pdf_path:
             raise ValueError("PDF路径不能为空")
